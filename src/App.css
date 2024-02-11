@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header styles */
+.header {
+  background-color: #1e272e;
+  color: #fff;
+  padding: 2.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header h1 {
+  margin: 1;
+  font-size: 1.1cm;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.header nav a:hover {
+  color: #ff6b6b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  padding: 2rem ;
+}
+
+/* Product card styles */
+.card {
+  border: none;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+.image{
+  height: 100px;
+  margin-left: 80rem;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.form-control{
+  margin-bottom: 10px ;
+}
+.card-text {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.input-group {
+  width: 50%;
+}
+
+.input-group button {
+  border-radius: 8px;
+  background-color: brown;
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.input-group button:hover {
+  background-color: brown;
+}
+
+/* Button styles */
+.btn {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: teal;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background-color: #e63946;
+  border-color: #e63946;
+}
+
+/* Badge styles */
+.badge {
+  background-color: #ff6b6b;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.img-logo{
+  width: 85px;
+  height: 85px; 
 }
